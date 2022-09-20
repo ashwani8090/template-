@@ -1,0 +1,29 @@
+.dropdown{
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown--bold{
+    font-weight: bold;
+}
+
+.dropdown--row{
+    display: flex;
+    align-items: center;
+}
+
+.dropdown--margin{
+    margin: 5px;
+}
+
+.add-btn{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-inline: 10px;
+    font-weight: bold;
+    color: #000000;
+}
