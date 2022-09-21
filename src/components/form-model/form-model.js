@@ -11,11 +11,12 @@ const FormModal = ({ fields = [], title = "", onClose = () => { } }) => {
                 <button onClick={onClose}>Clode Modal</button>
             </div>
             {
-                fields.map((item, index) => {
+                fields.map((item) => {
+                    console.log('item: ', item);
                     if (item?.type === 'TEXTFIELD') {
                         return (<TextField
                             label={item?.label}
-                            item={item[index]}
+                            item={item}
                             placeholder={item?.placeholder}
                         />)
                     }

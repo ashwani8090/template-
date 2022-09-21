@@ -13,7 +13,7 @@ const TextFieldComponent = ({
     <div className="text-field-comp ">
       <div className="text-field-container">
         <label className="mb10" for={"text-field"}>
-          {label}
+          {`${label} ${item?.isRequired && "*"}` }
         </label>
         <input
           value={value}
